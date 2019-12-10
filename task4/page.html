@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pages</title>
+    <style>
+        body {
+            background-color: #eff0f4;
+        }
+        header,footer {
+            background-color: #5fc0cd;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            
+        }
+        div {
+            background-color: white;
+            margin: 0.5rem;
+        }
+        .head {
+            justify-content: space-between;
+        }
+        .main {
+            display: flex;
+
+        }
+        .footer {
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 1rem;
+            height: 1.6rem;
+            padding: 1rem;
+            float: left;
+
+        }
+        
+        input {
+            margin: 1rem;
+            padding-left: 1.5rem;
+            border: none;
+            border-left: 1px solid #eff0f4;
+            outline: none;
+            
+        }
+        .forgot {
+            float: right;
+            
+        }
+        .forgot:link {
+                color: #5fc0cd;
+            }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <span class="register">注册</span>
+        <span class="sign">登录</span>
+        <span class="close">关闭</span>
+    </header>
+    <form action="">
+            <div class="main">
+                <img src="image4/iphone.png" alt="手机号" class="iphone">
+                <input type="text" placeholder="请输入手机号" maxlength="16">
+            </div>
+            <div class="main">
+                <img src="image4/locked.png" alt="密码" class="locked">
+                <input type="password" name="password" placeholder="请输入密码" maxlength="20">
+            </div>
+    </form>
+    <footer class="footer">登&emsp;录</footer>
+    <a href="#" class="forgot">忘记密码</a>
+</body>
+</html>
