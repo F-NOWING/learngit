@@ -86,6 +86,9 @@ select {
     margin-right: 0.5rem;
 }
 .time2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     margin-left: 1.7rem;
 }
 .time {
