@@ -65,10 +65,21 @@ header img {
     border-bottom: 0.08rem solid #fdd793;
     margin-bottom: 1rem;
 }
-.dot {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 0.5rem;
+
+.dot span {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 1rem;
+    display: inline-block;
+}
+.dot1 {
+    background-color: #69d1e9;
+}
+.dot2,.dot3,.dot4 {
+    background-color: #f0f0f0;
+}
+.dot span:hover {
+    background-color: #69d1e9;
 }
 a {
     display: block;
