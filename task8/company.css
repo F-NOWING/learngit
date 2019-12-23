@@ -1,0 +1,176 @@
+body {
+    background-color: #fafafa;
+}
+header {
+    background-color: #29b078;
+}
+.tops {
+    background-color: #fafafa;
+}
+.logo {
+    width: 80px;
+    height: 40px;
+}
+.navbar-light {
+    padding-bottom: 0;
+    background-color: #29b078 !important;
+}
+.nav-link:hover {
+    border-bottom: 2px solid white;
+}
+.navbar-light .navbar-nav .nav-link {
+    height: 50px;
+    color: #fff !important;
+}
+.contacts {
+    height: 30px;
+}
+
+.register2 {
+    display: none;
+}
+
+.register2 button {
+    /* margin-left: 10px; */
+    border-radius: 2px;
+    border: none;
+    background-color: #29b078;
+    color: white;
+}
+.services {
+    font-size: 14px;
+    color: #29b078;
+}
+.social-contact {
+    text-align: right;
+}
+.social-contact img {
+    width: 18px;
+    height: 18px;
+}
+.mr-auto, .mx-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+}
+.navbar-nav .nav-item {
+    text-align: center;
+}
+.home-top {
+    margin: 20px 0 20px 0;
+}
+.partner {
+    color: #29b078;
+}
+.cooperate-img {
+    width: 100%;
+}
+.cooperate,
+.experience {
+    border: 1px solid #eeeded;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.cooperate {
+    max-height: 600px;
+    line-height: 40px;
+}
+
+.experience {
+    color: #999;
+}
+.establish {
+    padding: 30px;
+    border-bottom: 1px solid #eeeded;
+}
+.describe {
+    min-width: 250px;
+    line-height: 30px;
+}
+h5 {
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+.company-items {
+    border-top: 1px solid #eeeded;
+}
+.company-items ul {
+    width: 160px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    font-size: 14px;
+    color: #29b078;
+}
+.sign {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #f9a372;
+    border-radius: 50%;
+}
+.company:hover {
+    color: #f9a372;
+}
+.sign:hover {
+    background-color: #f9a372;
+}
+.development {
+    padding:  10px 25px 70px 25px;
+    text-indent: 2em;
+    line-height: 30px;
+}
+.part  {
+    margin-top: 30px;
+}
+.others {
+    padding: 25px 0 25px 0;
+}
+.skill-tree {
+    margin-bottom: 65px;
+}
+.dependence {
+    margin-bottom: 20px;
+}
+.wechat {
+    text-align: right;
+}
+.plateform {
+    margin-bottom: 5px;
+}
+footer {
+    margin-top: 150px;
+    color: white;
+    background-color: #29b078;
+}
+.footer-link:hover {
+    border-bottom: 1px solid white;
+}
+.last {
+    text-align: center;
+    height: 30px;
+    border-top: 1px solid white;
+}
+@media screen and (max-width: 768px) {
+    .register1 {
+        display: none;
+    }
+    .register2 {
+        display: inline;
+    }
+    .others {
+        text-align: center;
+    }
+    .wechat {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .information {
+        margin-bottom: 20px;
+    }
+    .media {
+        display: block;
+    }
+}
