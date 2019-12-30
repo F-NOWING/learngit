@@ -81,7 +81,17 @@ header {
     border-bottom: 1px solid #edf1f2;
 
 }
-
+.go {
+    text-decoration: none;
+    color: #333;
+}
+.go:link {
+    text-decoration: none;
+    
+}
+.go:hover {
+    color: #fff;
+}
 .types-first {
     color: #c2c2c2;
 }

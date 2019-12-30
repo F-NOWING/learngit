@@ -114,7 +114,7 @@ h5 {
 .company:hover {
     color: #f9a372;
 }
-.sign:hover {
+.company:hover .sign {
     background-color: #f9a372;
 }
 .development {
