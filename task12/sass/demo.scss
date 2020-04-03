@@ -1,0 +1,145 @@
+@mixin mycolor {
+    color: white;
+    background-color: #5fc0cd;
+}
+@mixin myposition {
+    position: fixed;
+    width: 100%;
+}
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+body {
+    font-size: 62.5%;
+    margin: 0;
+}
+.head {
+    @include myposition;
+    padding: 1rem 0;
+    @include mycolor;
+    z-index: 1;
+    text-align: center;
+}
+.head { 
+    img {
+        @include size(0.8rem, 0.8rem);
+        position: absolute;
+        left: 1rem;
+    }
+}
+.introduce {
+    position: relative;
+    top: 3.1rem;
+    background: url(../image5/3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12rem;
+    color: white;      
+}
+.information {
+    position: absolute;
+    top: 50%;
+    left: 8rem;
+    transform: translateY(-50%);    
+}
+.photo {
+    @extend .information;
+    left: 1.5rem;
+    @include size(5rem, 5rem);
+    
+}
+
+.name {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+.address {
+    margin: 0.5rem;
+}
+.icon1 {
+    @include size(0.8rem, 1rem);
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+.skill {
+    margin-top: 3.4rem;
+    padding: 1rem;
+    border-bottom: 0.05rem solid #999999;
+}
+.left {            
+    position: absolute;
+    background-color: #5fc0cd;
+    left: 1rem;
+    @include size(0.25rem, 1rem);
+    margin-top: 0.1rem;
+}
+.right {
+    padding-left: 1rem;
+}
+.request img{
+    @include size(1rem, 1rem);
+}
+span,p {
+    font-size: 0.9rem;
+}
+.request {
+    margin: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.05rem solid #999;
+}
+.request3 {
+    @extend .request;
+    padding-bottom: 1.2rem;
+    
+}
+.request1 {
+    padding-left: 0.8rem;
+}
+.request1, 
+.request2 {
+    margin: 0.4rem;
+    display: inline-block;
+}
+.request4 {
+    padding: 0.1rem;
+    color: #999;
+    padding-right: 0.8rem;
+    border-right: 0.05rem solid #999;
+    
+}
+.price {
+    color: #e26163;
+}
+.service {
+    @extend .request;
+    margin-bottom: 5rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.service .request4 {
+    min-width: 3.7rem;
+}
+.request5 {
+    padding-left: 0.5rem;
+}
+.contact {
+    @include myposition;
+    bottom: 0;
+    background-color: white;
+}
+button {
+    @include size(45%, 3rem);
+    margin: 2%;
+    border-radius: 0.4rem;
+    outline: none;
+}
+.message {
+    @include mycolor;
+    border: 0.1rem solid #5fc0cd;
+}
+.numbers {
+    @include mycolor;
+}

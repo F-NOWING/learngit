@@ -1,0 +1,69 @@
+$mycolor1: #5fc0cd;
+$mycolor2: #fff;
+@mixin login-color {
+  background-color: $mycolor1;
+  color: $mycolor2;
+}
+@mixin align {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+body {
+  margin: 0;
+  background-color: #eff0f4;
+}
+header {
+  position: fixed;
+  top: 0;
+  @include align;
+  justify-content: space-between;
+  width: 100vw;
+  @include login-color;
+}
+.close {
+  margin-left: 20px;
+}
+.register {
+  margin-right: 20px;
+}
+
+label input {
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  color: #333;
+}
+.numbers {
+  @include align;
+  padding: 20px;
+  margin-top: 78px;
+  background-color: $mycolor2;
+}
+.passwords {
+  @include align;
+  padding: 20px;
+  margin: 10px 0 30px 0;
+  background-color: $mycolor2;
+}
+img {
+  width: 20px;
+  padding-right: 20px;
+  border-right: 2px solid #f7f8f9;
+}
+.login {
+  @include align;
+  justify-content: center;
+  @include login-color;
+} 
+a:link {
+  float: right;
+  text-decoration: none;
+  color: $mycolor1;
+}
+a {
+  color: $mycolor1;
+}
+.large {
+  font-size: 20px;
+}

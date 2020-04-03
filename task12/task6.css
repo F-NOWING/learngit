@@ -1,0 +1,176 @@
+body {
+    font-size: 62.5%;
+    margin: 0;
+}
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #5fc0cd; 
+    z-index: 1;
+    
+    
+}
+.find {   
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.1rem;
+    background-color: #55a8b3;
+    border-radius: 0.2rem;
+    padding-left: 0.6rem;
+    color: white;
+}
+.find span {
+    background-color: white;
+    color: #5fc0cd;
+    border-radius: 0.2rem;
+    float: right;
+    padding: 0.3rem 0.4rem;
+}
+select {
+    text-align: center;
+    text-align-last: center;
+    width: 6rem;
+    border: none;
+    color: #999;
+    outline: none;
+}
+.icon1 {
+    position: absolute;
+    margin-left: 45%;
+    width: 1.2rem;
+    height: 1.2rem;
+    
+} 
+.information {
+    position: relative;
+    top: 48px;
+    align-items: center;
+    border-bottom: 0.05rem solid #999;
+    min-width: 320px;
+}
+.place, .house, .patient {
+    width: 32.5%;
+    display: inline-block;
+    text-align: center;
+    padding: 0.2rem 0;
+    margin: 0.3rem 0;
+}
+.place,.house {
+    border-right: 0.05rem solid #999;
+}
+/* .icon2 {
+    position: relative;
+    left: 25%;
+} */
+.data,.address {
+    padding: 0.5rem;
+    color: #999;
+}
+.icon3 {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.5rem;
+}
+.icon4 {
+    width: 0.6rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+}
+.icon5 {
+    width: 0.7rem;
+    height: 0.8rem;
+    margin-right: 0.5rem;
+}
+.time2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 1.7rem;
+}
+.time {
+    /* display: flex; */
+    justify-content: space-between;
+}
+.prices {
+    display: inline-flex;
+    margin-right: 2rem;
+
+}
+.price {
+    /* margin-left: 5rem; */
+    color: #e63b0e;
+}
+.message {
+    position: relative;
+    top: 48px;
+    border-bottom: 0.05rem solid #999;
+}
+
+.data,.time,.address {
+    display: flex;
+    align-content: center;
+    
+}
+.icon2 {
+    width: 0.4rem;
+    height: 0.3rem;
+}
+.home,.mine {
+    display: inline-block;
+}
+.bottom-gap {
+    margin-bottom: 80px;
+}
+footer {
+    display: flex;
+    position: fixed;
+    height: 3rem;
+    background-color: #f8fafb;
+    width: 100%;
+    justify-content: center;
+    bottom: 0;
+} 
+.home p {
+    margin-top: -0.06rem;
+    margin-left: 0.2rem;
+}
+.mine p {
+    margin-top: -0.06rem;
+    margin-left: 0.2rem;
+}
+.icon6 {
+    margin-top: 0.5rem;
+    width: 1.5rem;
+    height: 1.3rem;
+}
+.icon7 {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 2.5rem;
+}
+.icon8 {
+    margin-top: 0.5rem;
+    width: 1.5rem;
+    height: 1.3rem;
+
+}
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 100%;
+    }
+    .icon2 {
+    left: 35%;
+}
+    .home p {
+    margin-top: -0.06rem;
+    margin-left: -0.125rem;
+}
+    .mine p {
+    margin-top: -0.06rem;
+    margin-left: -0.125rem;
+}
+}

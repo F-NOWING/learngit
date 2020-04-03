@@ -1,0 +1,161 @@
+@mixin myposition1($color) {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    background-color: $color; 
+}
+@mixin mysize($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin mymargin($top, $left) {
+    margin-top: $top;
+    margin-left: $left;
+}
+@mixin mycolor($color1, $bgc) {
+    color: $color1;
+    background-color: $bgc;
+}
+body {
+    font-size: 62.5%;
+    margin: 0;
+}
+header {
+    @include myposition1(#5fc0cd);
+    align-items: center;
+    z-index: 1;
+}
+.find {   
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.1rem;
+    @include mycolor(#fff, #55a8b3);
+    border-radius: 0.2rem;
+    padding-left: 0.6rem;
+}
+.find span {
+    @include mycolor(#5fc0cd, #fff);
+    border-radius: 0.2rem;
+    float: right;
+    padding: 0.3rem 0.4rem;
+}
+select {
+    text-align-last: center;
+    width: 6rem;
+    border: none;
+    color: #999;
+    outline: none;
+}
+.icon1 {
+    position: absolute;
+    margin-left: 45%;
+    @include mysize(1.2rem, 1.2rem);
+} 
+.information {
+    position: relative;
+    top: 48px;
+    align-items: center;
+    border-bottom: 0.05rem solid #999;
+    min-width: 320px;
+}
+.place,.house,.patient {
+    width: 32.5%;
+    display: inline-block;
+    text-align: center;
+    padding: 0.2rem 0;
+    margin: 0.3rem 0;
+}
+.place,.house {
+    border-right: 0.05rem solid #999;
+}
+.data,.address {
+    padding: 0.5rem;
+    color: #999;
+}
+.icon3 {
+    @include mysize(0.8rem, 0.8rem);
+    margin-right: 0.5rem;
+}
+.icon4 {
+    @include mysize(0.6rem, 1rem);
+    margin-left: 0.5rem;
+}
+.icon5 {
+    @include mysize(0.7rem, 0.8rem);
+    margin-right: 0.5rem;
+}
+.time2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 1.7rem;
+}
+.time {
+    justify-content: space-between;
+}
+.prices {
+    display: inline-flex;
+    margin-right: 2rem;
+
+}
+.price {
+    color: #e63b0e;
+}
+.message {
+    position: relative;
+    top: 48px;
+    border-bottom: 0.05rem solid #999;
+}
+
+.data,.time,.address {
+    display: flex;
+    align-content: center;
+    
+}
+.icon2 {
+    @include mysize(0.4rem, 0.3rem);
+}
+.home,.mine {
+    display: inline-block;
+}
+.bottom-gap {
+    margin-bottom: 80px;
+}
+footer {
+    @include myposition1(#f8fafb);
+    bottom: 0;
+} 
+.home p {
+    @include mymargin(-0.06rem, 0.2rem);
+}
+.mine p {
+    @include mymargin(-0.06rem, 0.2rem);
+}
+.icon6 {
+    margin-top: 0.5rem;
+    @include mysize(1.5rem, 1.3rem);
+}
+.icon7 {
+    @include mysize(3rem, 3rem);
+    margin: 0 2.5rem;
+}
+.icon8 {
+    margin-top: 0.5rem;
+    @include mysize(1.5rem, 1.3rem);
+}
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 100%;
+    }
+    .icon2 {
+        left: 35%;
+}
+    .home p {
+        @include mymargin(-0.06rem, -0.125rem);
+}
+    .mine p {
+        @include mymargin(-0.06rem, -0.125rem);
+}
+}

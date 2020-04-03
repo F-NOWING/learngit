@@ -1,0 +1,118 @@
+@mixin mysize($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin mycolor($color, $bgc) {
+    color: $color;
+    background-color: $bgc;
+}
+@mixin myflex {
+    display: flex;
+    align-items: center;
+}
+body {
+    margin: 0; 
+    background-color: #f0f0f0;
+    /*  避免电脑端出现横向滚动条 */
+    max-width: 1920px;
+    overflow: hidden;
+}
+header {
+    position: fixed;
+    @include mysize(100%, 2.5rem);
+    top: 0;
+    @include myflex;
+    background-color: #69d1e9;
+}
+.header-img {
+    @include mysize(1.4rem, 1.4rem);
+    margin-left: 0.5rem;
+}
+.aside-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -260px;
+    @include mysize(260px, 100%);
+}
+.aside-list {
+    @include myflex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    color: #69d1e9;
+    border-bottom: 1px solid #333;
+    list-style: none;
+}
+input {
+    display: none;
+}
+input[type="checkbox"]:checked ~ .aside-menu {
+    left: 0;
+}
+input[type="checkbox"]:checked ~ .block {
+    margin-left: 260px;
+    margin-right: -260px;
+}
+.main-all-game {
+    margin: 3.5rem 1rem;
+    text-align: center;
+}
+.last-game {
+    margin-bottom: 1rem;
+    @include myflex;
+    justify-content: center;
+    padding: 0.8rem;
+    @include mycolor(#9a9a9a, #fff)
+}
+.back {
+    position: absolute;
+    @include mysize(0.8rem, 1.2rem);
+    left: 90%;    
+}
+.main-all-type {
+    background-color: #fff;
+}
+.game-form {
+    margin: 0 1.5rem;
+    padding: 1.5rem;
+    @include mycolor(#fff, #69d1e9);
+}
+ .game-choose {
+    float: right;
+    @include mysize(1rem, 2rem);
+    left: 89%;
+    margin-top: -5.5rem;
+    margin-right: 0.1rem;
+}
+.players {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    color: #9a9a9a;
+}
+.game {
+    padding: 1rem;
+    border-bottom: 0.08rem solid #fdd793;
+    margin-bottom: 1rem;
+    color: #fbb435;
+}
+.dot span {
+    display: inline-block;
+    @include mysize(0.8rem, 0.8rem);
+    border-radius: 1rem;
+}
+.dot1 {
+    background-color: #69d1e9;
+}
+.dot2,.dot3,.dot4 {
+    background-color: #f0f0f0;
+}
+.dot span:hover {
+    @extend .dot1;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+a:hover {
+    opacity: 0.9;
+}

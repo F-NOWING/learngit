@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    background-color: #29bde0;
+}
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 3rem;
+    top: 0; 
+    text-align: center; 
+    color: #e4f7fb;   
+    background-color: #29bde0;
+    
+}
+header img { 
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.header-items {
+    float: left;
+}
+.header-closes {
+    float: right;
+}
+.header-vote {
+    display: inline-block;
+    padding: 1.2rem;
+    
+}
+.main-news {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    margin-top: 3rem;
+    background-color: #b9e9f5;
+    height: 2.4rem;
+}
+.main-news span {
+    position: relative;
+    top: 0.5rem;
+    color: #464646;
+}
+audio {
+    position: absolute;
+    width: 6rem;
+    height: 3rem;
+    opacity: 0;
+    right: 0.1rem;
+    top: 3rem;
+    transform: rotate(180deg);
+}
+.main-play {
+    float: right;
+    width: 2.2rem;
+    height: 2.2rem;  
+    animation: myrotate 5s infinite;
+    -webkit-animation: myrotate 5s infinite; /*Safari and Chrome*/
+}
+@keyframes myrotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@-webkit-keyframes myrotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.down {
+    position: relative;
+    width: 0.6rem;
+    top: -0.55rem;
+    left: 2rem;
+}
+
+.main-rule {
+    margin-left: 2rem;
+    margin-top: -0.6rem;
+    font-size: 0.9rem;
+    color: #f2fbfd;
+}
+.main-identity {
+    margin: 0 10%;
+    text-align: center;
+    margin-bottom: 10rem;
+    
+}
+.main-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12vw;
+}
+.row-profession {
+    border: 3px solid #fff;
+    /* width: 22vw; */
+    height: 22vw;
+    
+}
+.row-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16vw;
+    background-color: #f5c97b;
+    margin: 0;
+
+}
+.row-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #83b09a;
+    height: 6vw;
+    margin: 0;
+}
+.row-father {
+    width: 22vw;
+    
+}
+.row-hidden {
+    display: none;           
+    margin-top: 0.5rem;
+    
+}
+.row-hidden img {
+    width: 22vw; 
+}
+.row-father:hover .row-hidden {
+    display: block;
+    text-align: center;
+    position: absolute;
+}
+footer {
+    position: fixed;
+    z-index: 1;
+    background-color: #29bde0;
+    text-align: center;
+    margin: 0 10%;
+    border-top: 1px solid white;
+    width: 80%;
+    bottom: 0;
+    height: 5rem;
+}
+button {
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+    padding: 1rem;
+    width: 70%;
+    background-color: #fbb435;
+    border: 0;
+    color: white;
+    font-size: 1rem;   
+}
