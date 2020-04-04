@@ -26,6 +26,7 @@ body {
 }
 
 .right {
+    width: 4.5rem;
     float: right;
     text-align: center;
     margin-right: 1.25rem;
@@ -36,6 +37,7 @@ body {
         width: 3rem;
     }
 .left {
+    width: 4rem;
     float: left; 
     text-align: center;  
     margin-left: 1.25rem; 
