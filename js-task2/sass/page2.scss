@@ -50,12 +50,12 @@ main {
     height: 250px;
 }
 .role-people:before {
-    content: url("/image/squar1.png");
+    content: url("../image/squar1.png");
     position: relative;
     right: 5px;
 }
 .role-killer:before {
-    content: url("/image/squar2.png");
+    content: url("../image/squar2.png");
     position: relative;
     right: 5px;
 }
