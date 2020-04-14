@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/js1.js"></script>
+    <link rel="stylesheet" href="css/page1.css">
+    <title>游戏类型</title>
+</head>
+<body>
+    <header>
+        <img src="image/more.png">
+    </header>
+    <main>
+        <div class="main-last">
+            <span class="last-game">上次游戏： 捉鬼猜词版</span>
+            <img src="image/back2.png" class="last-back">
+        </div>
+        <div class="main-game">
+            <div class="main-game1">
+                <img src="image/werworf.png" class="game-werwolf">
+                <div class="game-left" onclick="enterGame()"></div>
+                <div class="game-right" onclick="enterGame()"></div>
+                <div class="game-name">狼人杀</div>
+                <div class="game-playing">有1133个用户正在玩此款游戏</div>
+            </div>
+            <div class="main-game2">
+                <div class="game-catch">捉鬼游戏</div>
+                <div class="game-type" onclick="newGame()">简化版</div>
+                <div class="game2-right" onclick="enterHome()"></div>
+                <div class="game-playing">有1133个用户正在玩此款游戏</div>
+            </div>
+            <div class="game-dot">
+                <span class="dot1"></span>
+                <span class="dot2"></span>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+@mixin mysize($width, $height) {
+    width: $width;
+    height: $height;
+}
+html {
+    background-color: #fff;
+}
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 768px;
+    height: 100vh;
+    background-color: #29bde0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #29bde0;
+    color: #fff;
+}
+.header-back {
+    width: 16px;
+}
+.header-close {
+    width: 20px;
+}
+.main-truth {
+    position: relative;
+    top: 40px;
+    margin: auto;
+    @include mysize(80%, 400px);
+    text-align: center;
+    background-color: #ffedc5;
+    border: 2px solid #fff;
+}
+
+.main-num {
+    position: relative;
+    top: -20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mysize(40px, 40px);
+    color: #f56b81;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #ffedc5;
+}
+.main-check {
+    margin-top: 64px;
+    width: 200px;
+}
+.identity-true {
+    display: none;
+}
+.identity-true img {
+   width: 160px;
+}
+.identity-role {
+    margin-top: 20px;
+    color: #29bde0;
+}
+
+.footer-check {
+    display: block;
+    @include mysize(84%, 40px);
+    margin: 100px auto 0 auto;
+    font-size: 20px;
+    background-color: #fbb435;
+    color: #fff;
+    border: none;
+    outline: 0;
+    
+}
+.check-copy,
+.check-copy-t {
+    @extend .footer-check;
+    display: none;
+}

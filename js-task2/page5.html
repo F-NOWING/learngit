@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="state-machine.js"></script>
+    <link rel="stylesheet" href="css/page5.css">
+    <title>法官台本</title>
+</head>
+<body>
+    <header>
+        <img src="image/back.png" class="header-back">
+        <span>法官台本</span>
+        <img src="image/close.png" class="header-close">
+    </header>
+    <main class="main-game">
+        <div class="main-start">
+            <div class="start-day">第1天</div>
+            <div class="start-sign-box">
+                <div class="start-sign"></div>
+            </div>
+            <div class="start-process">
+                <div class="process-box">
+                    <div class="process-one process-triangle">
+                        <img src="image/moon.png">
+                        <div>杀手杀人</div>
+                    </div>
+                    <div class="mt20 message-night"></div>
+                    <div class="process-two process-triangle">
+                        <img src="image/sun.png">
+                        <div>亡灵发表遗言</div >
+                    </div>
+                    <div class="process-three process-triangle">玩家依次发言</div>
+                    <div class="process-four process-triangle">全民投票</div>
+                    <div class="mt20 message-daytime"></div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <input type="button" class="footer-end" value="结束游戏"></input>
+        <input type="button" class="footer-note" value="法官日志"></input>
+    </footer>
+    
+    <script src="js5.js"></script>
+</body>
+</html>

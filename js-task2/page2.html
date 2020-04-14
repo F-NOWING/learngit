@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/page2.css">
+    <script type="text/javascript" src="/js2.js"></script>
+    <title>玩家分配</title>
+</head>
+<body>
+    <header>
+        <a href="page1.html">
+            <img src="image/back.png" class="header-back">
+        </a>
+        <span>参数设置</span>
+        <a href="">
+            <img src="image/help.png" class="header-help">
+        </a>
+    </header>
+    <main>
+        <div class="main-assignment">
+            <div class="assignment-player">
+                <div>玩<br>家<br>匹<br>配</div>
+            </div>
+            <div class="assignment-num">
+                <div class="num-role">
+                    <span class="role-people">平&emsp;民&ensp;<span id="people">3</span>&ensp;人</span>
+                    <span class="role-killer">杀&emsp;手&ensp;<span id="killer">1</span>&ensp;人</span>
+                </div>
+                <div class="assignment-setting">
+                    <div class="setting">
+                        <span>点我设置</span>
+                        <img src="image/pencil.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-keyword">
+            <div class="keyword-group">水民词组</div>
+            <div class="keyword-group">幽灵词组</div>
+        </div>
+        <div class="main-player">
+            <div class="main-gamer">玩家人数&ensp;<input value="4" class="total-player" id="players">&ensp;人</div>
+            <div>
+                <div class="gamer-range">
+                    <img src="image/sub.png" class="gamer-sub" onclick="sub()">
+                    <div class="range-box">
+                        <input type="range" id="input-slide" value="0" min="0" max="18" step="1">
+                        <p class="range-width" id="range-widths"></p>
+                    </div>
+                    <img src="image/add.png" class="gamer-add" onclick="add()">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <input type="button" class="game-start" value="去发牌" onclick="setNum()">
+        </div>
+    </footer>
+</body>
+</html>

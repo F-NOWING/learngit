@@ -1,0 +1,108 @@
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 768px;
+  background-color: #29bde0;
+}
+
+header {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.header-title {
+  font-size: 20px;
+}
+
+.header-close {
+  position: absolute;
+  right: 10px;
+  width: 20px;
+}
+
+main {
+  overflow: hidden;
+}
+
+.main-notice {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #b9e9f5;
+}
+
+.main-down {
+  width: 0;
+  margin-left: 20px;
+  border-top: 10px solid #b9e9f5;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.main-action {
+  padding-left: 20px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.main-roles {
+  margin-top: 10px;
+  padding-bottom: 70px;
+  overflow: hidden;
+}
+
+.role-in {
+  position: relative;
+  float: left;
+  width: 21%;
+  height: 21vw;
+  max-height: 162px;
+  margin: 5.5%;
+  background-color: #f5c97b;
+  border: 2px solid #fff;
+  outline: 0;
+}
+
+.role-ide, .role-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78%;
+}
+
+.role-order {
+  height: 22%;
+  color: #fff;
+  background-color: #83b09a;
+}
+
+.role-killed {
+  width: 30px;
+  display: block;
+  margin: 5px auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  width: 100%;
+  max-width: 768px;
+  background-color: #29bde0;
+}
+
+.footer-next, .footer-vote {
+  width: 80%;
+  height: 30px;
+  color: #fff;
+  background-color: #fbb435;
+  border-radius: 5px;
+  border: none;
+  outline: 0;
+}
